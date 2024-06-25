@@ -145,3 +145,18 @@ nav {
         transform: scale(1);
     }
 }
+
+.nav-proyecto ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+    padding: 1px;
+}
+.nav-proyecto ul li{
+    border-bottom: 2px solid rgb(18, 18, 18);
+}
+.nav-proyecto ul li:hover{
+    border-bottom: 2px solid rgb(0, 200, 255);
+}
