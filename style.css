@@ -1,0 +1,147 @@
+
+html {
+    color-scheme: dark;
+    font-family: system-ui;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+nav {
+    background: rgb(49, 49, 49);
+    width: 100vw;
+}
+
+.barra_de_navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra_de_navegacion ul {
+    display: flex;
+
+}
+.barra_de_navegacion ul li{
+    list-style: none;
+}
+.barra_de_navegacion ul li a{
+    margin: 4px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.4rem;
+}
+.barra_de_navegacion ul li a:hover{
+    background-color: rgb(64, 64, 64);
+}
+.text_navegacion h1{
+    font-size: 1.3rem;
+    margin-left: 6px;
+}
+.text_navegacion h1 span{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8rem;
+}
+.main-index{
+    width: 100vw;
+    height: 73vh;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+.center-text-main{
+    padding: 15px;
+}
+.aside-index{
+    width: 95vw;
+}
+.aside-index ul{
+    margin: 0;
+    display: flex;
+    height: 15vh;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.aside-index ul li{
+    margin: 15px;
+    padding: 10px;
+    background: rgb(22, 22, 22);
+    border-radius: 0.4rem;
+    box-shadow: 0.2rem 0.4rem 1rem black;
+}
+.aside-index ul li:hover{
+    cursor: help;
+    box-shadow: 0.2rem 0.4rem 1rem rgba(255, 255, 255, 0.217);
+}
+.main-index h2{
+    margin: 0;
+}
+.span1-center-text{
+    font-weight: bold;
+    color: rgba(0, 255, 255, 0.594);
+}
+.span2-center-text{
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.4);
+}
+.center-text-main h2 a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0.2rem 0.08rem 0.5rem rgba(255, 255, 255, 0.395);
+}
+.decoration-main1{
+    z-index: -1;
+    position: absolute;
+    top: 25%;
+    left: -5%;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 127, 0.16);
+    filter: blur(10px);
+    animation: Cuadrado-giros 20s infinite;
+}
+@keyframes Cuadrado-giros{
+    0%{
+        transform: rotate(60deg);
+    }
+    50%{
+        transform:rotate(-30deg);
+    }
+    100%{
+        transform: rotate(60deg);
+    }
+}
+.decoration-main2{
+    z-index: -2;
+    position: absolute;
+    top: 38%;
+    left: 35%;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(137, 43, 226, 0.2);
+    border-radius: 100%;
+    filter: blur(10px);
+    animation: circle-dimension 10s infinite;
+}
+@keyframes circle-dimension {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(2);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    75%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
